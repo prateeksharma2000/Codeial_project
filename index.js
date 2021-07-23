@@ -26,7 +26,7 @@ const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
 const path = require('path');
 
 /* chat server */
-chatServer.listen(5000);
+chatServer.listen(3000);
 console.log('Chat Server is listening on port 5000');
 
 if (env.name == 'development')
