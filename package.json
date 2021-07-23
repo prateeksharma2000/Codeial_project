@@ -1,5 +1,5 @@
 {
-  "name": "comspace-express",
+  "name": "codeial",
   "version": "1.0.0",
   "description": "Comspace Express is a Social media Web Application.",
   "main": "index.js",
@@ -11,15 +11,15 @@
   "keywords": [
     "social"
   ],
-  "author": "Parikshit Singh",
+  "author": "Prateek Sharma",
   "license": "ISC",
   "dependencies": {
     "@types/gulp": "^4.0.6",
     "@types/jquery": "^3.3.38",
-    "@types/socket.io": "^2.1.8",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^3.2.0",
     "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "del": "^5.1.0",
     "dotenv": "^8.2.0",
@@ -45,7 +45,7 @@
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
     "rotating-file-stream": "^2.1.1",
-    "socket.io": "^2.3.0"
+    "socket.io": "^3.0.3"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
