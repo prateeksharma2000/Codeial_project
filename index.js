@@ -25,13 +25,13 @@ const chatServer = require('http').Server(app);
 const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
 const path = require('path');
 
-const redis = require("redis");
-const fs = require("fs");
+// const redis = require("redis");
+// const fs = require("fs");
 
-const client = redis.createClient(process.env.REDIS_URL);
+// const client = redis.createClient(process.env.REDIS_URL);
 
-const Redis = require("ioredis");
-const client2 = new Redis(process.env.REDIS_URL);
+// const Redis = require("ioredis");
+// const client2 = new Redis(process.env.REDIS_URL);
 
 /* chat server */
 chatServer.listen(3000);

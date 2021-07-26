@@ -2,8 +2,8 @@ const Comments = require('../models/comment');
 const Post = require('../models/post');
 const User=require('../models/user');
 const comments_mailer=require('../mailers/comments_mailer');
-const comment_email_worker=require('../workers/comment_email_worker');
-const queue=require('../config/kue');
+//const comment_email_worker=require('../workers/comment_email_worker');
+//const queue=require('../config/kue');
 const Like=require('../models/like');
 
 module.exports.create = async function (req, res)
@@ -28,16 +28,16 @@ module.exports.create = async function (req, res)
             .populate('user')
             .populate('post');
 
-            // comments_mailer.create_new_comment(comment);
-            let job=queue.create('emails', comment).save(function(error)
-            {
-                if(error)
-                {
-                    console.log('error in creating a queue', error);
-                    return;
-                }
-                console.log('job enqueued', job.id);
-            })
+            comments_mailer.create_new_comment(comment);
+            // let job=queue.create('emails', comment).save(function(error)
+            // {
+            //     if(error)
+            //     {
+            //         console.log('error in creating a queue', error);
+            //         return;
+            //     }
+            //     console.log('job enqueued', job.id);
+            // })
 
             if(req.xhr)
             {
