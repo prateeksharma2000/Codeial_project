@@ -33,6 +33,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
     "gulp-wait": "0.0.2",
+    "ioredis": "^4.27.6",
     "jsonwebtoken": "^8.5.1",
     "kue": "^0.11.6",
     "mongoose": "^5.9.16",
@@ -44,6 +45,7 @@
     "passport-google-oauth": "^2.0.0",
     "passport-jwt": "^4.0.0",
     "passport-local": "^1.0.0",
+    "redis": "^3.1.2",
     "rotating-file-stream": "^2.1.1",
     "socket.io": "^3.0.3"
   },
